@@ -1,0 +1,6 @@
+[submodule "wasmception"]
+	path = wasmception
+	url = git@github.com:yurydelendik/wasmception.git
+[submodule "mruby"]
+	path = mruby
+	url = git@github.com:sbsoftware/mruby.git
