@@ -5,6 +5,8 @@ Compile Ruby to WebAssembly
     $ git clone git@github.com:sbsoftware/rasm.git
     $ cd rasm
     $ make
+
+# Install
     // optional to make the rasm command available system wide
     $ sudo su
     # make install
