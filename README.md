@@ -9,3 +9,8 @@ Compile Ruby to WebAssembly
     $ sudo su
     # make install
     # exit
+
+# Uninstall
+    $ sudo su
+    # make clean
+    # exit
