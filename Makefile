@@ -10,7 +10,11 @@ mruby.BUILT: wasmception.BUILT
 
 build: mruby.BUILT
 
+install:
+	ln -s ${PWD}/bin/rasm /usr/local/bin/rasm
+
 clean:
+	rm /usr/local/bin/rasm
 	cd wasmception; make clean; cd ../
 	rm wasmception.BUILT
 	cd mruby; make clean; cd ../
