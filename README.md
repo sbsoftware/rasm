@@ -14,5 +14,6 @@ Compile Ruby to WebAssembly
 
 # Uninstall
     $ sudo su
+    // CAUTION: This will also wipe the build, you will have no executable left unless you rebuild
     # make clean
     # exit
