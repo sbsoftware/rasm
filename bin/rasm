@@ -6,5 +6,5 @@ PATH=$HERE/../wasmception/dist/bin:$HERE/../mruby/bin:$PATH
 RASM_APP_C_PATH=$HERE/../assets/rasm_app.c
 
 mrbc -Brasm_app -o$RASM_APP_C_PATH $1
-clang -Os --target=wasm32-unknown-unknown-wasm --sysroot=$HERE/../wasmception/sysroot -nostartfiles -fvisibility=hidden -std=c99 -I $HERE/../mruby/include -I $HERE/../include -Wl,--no-entry,--import-memory,--allow-undefined-file=$HERE/../assets/rasm.syms,--strip-all $HERE/../src/main.c $HERE/../mruby/build/wasm/lib/libmruby.a -o rasm_app.wasm
+clang -Os --target=wasm32-unknown-unknown-wasm --sysroot=$HERE/../wasmception/sysroot -fvisibility=hidden -std=c99 -I $HERE/../mruby/include -I $HERE/../include -Wl,--no-entry,--import-memory,--allow-undefined-file=$HERE/../assets/rasm.syms,--strip-all $HERE/../src/main.c $HERE/../mruby/build/wasm/lib/libmruby.a -o rasm_app.wasm
 rm $RASM_APP_C_PATH

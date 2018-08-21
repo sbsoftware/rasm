@@ -5,7 +5,7 @@
 
 #include "../assets/rasm_app.c"
 
-WASM_EXPORT void initialize() {
+WASM_EXPORT int main() {
   mrb_state *mrb = mrb_open();
 
   mrb_load_irep(mrb, rasm_app);
@@ -13,4 +13,6 @@ WASM_EXPORT void initialize() {
   if (mrb->exc) mrb_print_error(mrb);
 
   mrb_close(mrb);
+
+  return 0;
 }
