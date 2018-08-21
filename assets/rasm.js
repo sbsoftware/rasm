@@ -1,4 +1,4 @@
-import * as wasem from './wasem.js';
+import * as wasem from '../../wasem.js/wasem.js';
 
 const rasm_imports = {
 };
